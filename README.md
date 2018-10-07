@@ -4,7 +4,7 @@
 
 ## Demo
 
-![image](https://github.com/mostafatech/vue-datepicker-persian/raw/master/screenshot/demo.PNG)
+![image](https://github.com/MostafaTech/vue-datepicker-persian/raw/master/screenshot/demo.PNG)
 
 ## Install
 
