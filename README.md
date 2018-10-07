@@ -1,38 +1,22 @@
-# vue2-datepicker
+# vue-datepicker-persian
 
-[中文版](https://github.com/mengxiong10/vue2-datepicker/blob/master/README.zh-CN.md)
-
-> A Datepicker Component For Vue2
-
-<a href="https://travis-ci.org/mengxiong10/vue2-datepicker">
-  <img src="https://travis-ci.org/mengxiong10/vue2-datepicker.svg?branch=master" alt="build:passed">
-</a>
-<a href="https://coveralls.io/github/mengxiong10/vue2-datepicker">
-  <img src="https://coveralls.io/repos/github/mengxiong10/vue2-datepicker/badge.svg?branch=master&service=github" alt="Badge">
-</a>
-<a href="https://www.npmjs.com/package/vue2-datepicker">
-  <img src="https://img.shields.io/npm/v/vue2-datepicker.svg" alt="npm">
-</a>
-<a href="LICENSE">
-  <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT">
-</a>
+> A Persian Datepicker Component For Vue2
 
 ## Demo
-<https://mengxiong10.github.io/vue2-datepicker/demo/index.html>
 
-![image](https://github.com/mengxiong10/vue2-datepicker/raw/master/screenshot/demo.PNG)
+![image](https://github.com/mostafatech/vue-datepicker-persian/raw/master/screenshot/demo.PNG)
 
 ## Install
 
 ```bash
-$ npm install vue2-datepicker --save
+$ npm install vue-datepicker-persian --save
 ```
 
 ## Usage
 
 ```html
 <script>
-import DatePicker from 'vue2-datepicker'
+import DatePicker from 'vue-datepicker-persian'
 
 export default {
   components: { DatePicker },
@@ -73,8 +57,8 @@ export default {
 |---------------------|---------------|-------------|-----------------------------------------------------|
 | type                | String        | 'date'      | select date type (date/datetime/year/month/time)    |
 | range               | Boolean       | false       | if true, the type is daterange or datetimerange     |
-| format              | String        | YYYY-MM-DD  | The parsing tokens are similar to the moment.js     |
-| lang                | String/Object | zh          | Translation (en/zh/es/pt-br/fr/ru/de/it/cs)(custom) |
+| format              | String        | YYYY/MM/DD  | The parsing tokens are similar to the moment.js     |
+| lang                | String/Object | fa          | Translation (fa)(custom) |
 | clearable           | Boolean       | true        | if false, don't show the clear icon                 |
 | confirm             | Boolean       | false       | if true, need click the button to change the value  |
 | editable            | Boolean       | true        | if false, user cann't type it                       |
@@ -94,36 +78,6 @@ export default {
 | range-separator     | String        | '~'         | the range separator text                            |
 | date-format         | String        | ''          | format the time header and tooltip                  |
 
-
-#### lang
-* String (en/zh/es/pt-br/fr/ru/de/it/cs)
-* Object (custom)
-
-```html
-<script>
-export default {
-  data() {
-    return {
-      value: '',
-      lang: {
-        days: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-        months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-        pickers: ['next 7 days', 'next 30 days', 'previous 7 days', 'previous 30 days'],
-        placeholder: {
-          date: 'Select Date',
-          dateRange: 'Select Date Range'
-        }
-      }
-    }
-  }
-}
-</script>
-
-<template>
-  <date-picker v-model="value" :lang="lang"></date-picker>
-</template>
-
-```
 
 #### shortcuts
 * true -      show the default shortcuts
@@ -166,13 +120,13 @@ export default {
 | header          | popup header             |
 | footer          | popup footer             |
 
-## ChangeLog 
 
-[CHANGELOG](CHANGELOG.md)
+### Thanks
 
+This component is a forked branch of mengxiong10's [vue2-datepicker](https://github.com/mengxiong10/vue2-datepicker) datepicker component
 
 ## License
 
-[MIT](https://github.com/mengxiong10/vue2-datepicker/blob/master/LICENSE)
+[MIT](https://github.com/mostafatech/vue-datepicker-persian/blob/master/LICENSE)
 
-Copyright (c) 2017-present xiemengxiong
+Copyright (c) 2017-present MostafaTech
