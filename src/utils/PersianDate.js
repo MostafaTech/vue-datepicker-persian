@@ -69,7 +69,9 @@ export default class PersianDate {
         return this.year +'/'+ this._getTwoDigitsString(this.month) +'/'+ this._getTwoDigitsString(this.day)
     }
     getGregorian() {
-        return toGregorianDate(this.year, this.month, this.day);
+        var gDate = toGregorianDate(this.year, this.month, this.day);
+        gDate.setHours(this.hour, this.minute, this.second, 0);
+        return gDate;
     }
 
     toString() {

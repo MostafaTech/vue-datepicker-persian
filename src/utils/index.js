@@ -74,12 +74,12 @@ export function formatDate (date, format) {
       .replace('M', date.getMonth())
       .replace('D', date.getDate())
       .replace('HH', getTwoDigitsString(date.getHours()))
-      .replace('hh', getTwoDigitsString(date.getHours() - (date.getHours() <= 12 ? 12 : 0)))
+      .replace('hh', getTwoDigitsString(date.getHours() - (date.getHours() <= 12 ? 0 : 12)))
       .replace('mm', getTwoDigitsString(date.getMinutes()))
       .replace('ss', getTwoDigitsString(date.getSeconds()))
       .replace('a', getTwoDigitsString((date.getHours() <= 12 ? 'قبل' : 'بعد') + ' از ظهر'));
 
-    return new PersianDate(date).getShortDate()
+    return result
   } catch (e) {
     return ''
   }

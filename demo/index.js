@@ -62,7 +62,7 @@ new Vue({  // eslint-disable-line
         <date-picker
           v-model="value4"
           type="datetime"
-          format="YYYY/MM/DD hh:mm:ss a"
+          format="YYYY/MM/DD HH:mm:ss"
           :time-picker-options="{
             start: '00:00',
             step: '00:30',
@@ -72,7 +72,7 @@ new Vue({  // eslint-disable-line
         <date-picker
           v-model="value9"
           type="datetime"
-          format="YYYY/MM/DD hh:mm:ss a"
+          format="YYYY/MM/DD HH:mm:ss"
           :minute-step="10"
           ></date-picker>`,
       'بازه تاریخی': `
